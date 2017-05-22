@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-05-22T15:47:44.199Z</updated>
+  <updated>2017-05-22T15:51:51.032Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/05/22/select/"/>
     <id>http://yoursite.com/2017/05/22/select/</id>
     <published>2017-05-22T15:44:56.000Z</published>
-    <updated>2017-05-22T15:47:44.199Z</updated>
+    <updated>2017-05-22T15:51:51.032Z</updated>
     
     <content type="html"><![CDATA[<h3 id="bootstrap-中的多选使用"><a href="#bootstrap-中的多选使用" class="headerlink" title="bootstrap 中的多选使用"></a>bootstrap 中的多选使用</h3><p><a href="https://silviomoreto.github.io/bootstrap-select/" target="_blank" rel="external">官方文档</a></p>
 <blockquote>
@@ -44,7 +44,7 @@
 <blockquote>
 <p>那么现在一个简单的boostrap-select简单的需求就完成了。</p>
 </blockquote>
-<p><img src="select.png" alt=""><br>如果需要更多的方法那就去看文档去吧。</p>
+<p><img src="/images/select.png" alt=""><br>如果需要更多的方法那就去看文档去吧。</p>
 ]]></content>
     
     <summary type="html">

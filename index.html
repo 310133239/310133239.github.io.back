@@ -337,7 +337,7 @@
 <h4 id="2-动态生成"><a href="#2-动态生成" class="headerlink" title="2.动态生成"></a>2.动态生成</h4><blockquote>
 <p>在实际开发过程中我们肯定会遇到字符串拼接生成在bootstrap-select有一个很好的方法那就是 $(‘.selectpicker’).selectpicker(‘refresh’);</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">var str1=&quot;&quot;;</div><div class="line">for(var i=0;i&lt;data.length;i++)&#123;</div><div class="line">	str1+=&apos;&lt;option value=&quot;&apos;+data.val+&apos;&quot;&gt;&apos;+data.name+&apos;&lt;/option&gt;&apos;</div><div class="line"></div><div class="line">&#125;</div><div class="line">var str=&apos;&lt;select class=&quot;selectpicker  pull-left&quot; multiple data-noneSelectedText=&quot;点击添加&quot; data-title=&quot;点击添加&quot;&gt;&apos;+str1+&apos;&lt;/select&gt;&apos;;</div><div class="line"> $(&quot;.selectList&quot;).html(str);</div><div class="line">$(&apos;.selectpicker&apos;).selectpicker(&apos;refresh&apos;);</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">var str1=&quot;&quot;;</div><div class="line">for(var i=0;i&lt;data.length;i++)&#123;</div><div class="line">	str1+=&apos;&lt;option value=&quot;&apos;+data.val+&apos;&quot;&gt;&apos;+data.name+&apos;&lt;/option&gt;&apos;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">&lt;!-- more --&gt;</div><div class="line"></div><div class="line">var str=&apos;&lt;select class=&quot;selectpicker  pull-left&quot; multiple data-noneSelectedText=&quot;点击添加&quot; data-title=&quot;点击添加&quot;&gt;&apos;+str1+&apos;&lt;/select&gt;&apos;;</div><div class="line"> $(&quot;.selectList&quot;).html(str);</div><div class="line">$(&apos;.selectpicker&apos;).selectpicker(&apos;refresh&apos;);</div></pre></td></tr></table></figure>
 <p>然后就直接好了，什么时候需要动态添加就直接refresh就好了</p>
 <h4 id="3-关于事件的触发"><a href="#3-关于事件的触发" class="headerlink" title="3.关于事件的触发"></a>3.关于事件的触发</h4><blockquote>
 <p>刚开始的时候我也是看了会文档发现没有选择的事件触发啊，后来我才发现原来用的是原生的事件，bootstrap虽然改变了样式结构但是事件最后是没有更改的。直接用原生就好了。</p>
@@ -457,10 +457,14 @@
 
       
         
-          
-            <p>程序猿,你也配吃10元的盒饭?<br>又是一个阳光灿烂的中午，看了一上午的报纸，茶水也顺带喝了不少，肚子早已经咕咕作响了，今天中午吃点什么了，貌似楼下的新开张的盒饭还不错，于是我来到楼下准备买上一盒。<br>菜色还不错，价格有6元，8元，10元，12元，20元的，像哥这样的精英管理人才，怎么着也的吃最高级的才配合身份，就在我准备购买时，一个响亮的声音响起。<br>“老板，给我一份10元的盒饭”。<br>顺势撇了一眼，一个小伙子，眉开眼笑的靠近盒饭铺，今天是1号，看样子是发工资了。就当他走近时，看到了我，刚才的欢愉的表情瞬时黯淡下去，他知道我认出了他，靠，满头白里带一点黑的头发，永远没睡醒的眼神，以及那凌乱的胡渣子，都出卖了他的身份。我继续狠狠的盯着他，他越发的羞愧了，我犀利的眼神正在和他做着底层通信，我默默的向他传达一个信息，<br>“你，也配吃10元的盒饭?”。<br>他哀怜的眼神似乎在祈求我不要拆穿他的身份，可惜，哥这么有正义感的人，怎么能在这个时候放弃原则!<br>“你不是隔壁公司的程序员么?”<br>就这一瞬间，他整个人似乎崩溃下去，刚才欢愉的表情彻底变为哭丧，周围的小摊贩以及路人甲乙丙丁，都纷纷投来了鄙视的眼光，他瘟鸡一样的双手抓着头发，痛苦的蹲了下去。<br>就在这时，人群中终于有人忍不住了，大声呵骂到，<br>“呸，程序员也敢吃10元的盒饭，真不要脸”<br>一位老大娘好心的提醒到，<br>“小伙子啊，你一个程序员，挣点钱不容易啊，怎么吃10元的盒饭啊”<br>一名打扮妖艳入时的姑娘说到，<br>“人家当小姐的都才吃10元，你也敢要10元的?”<br>我义正言辞的给他说到，<br>“我说一句话顶你写一万行代码，也才吃20元的盒饭，你竟敢吃10元的”<br>老板也发话了，<br>“是程序员啊，太不好意思了，你吃6元的吧，不然人家知道我卖了你10元的，我这生意就做不了啊”<br>他终于发出颤抖的声音说到<br>“对不起，我刚才说错了，给我一份6元的”。<br>这时人群中爆发出激烈的掌声，我知道，这是我又一次坚持原则，换来的荣誉的赞赏!  </p>
-
-          
+          <p>程序猿,你也配吃10元的盒饭?<br>又是一个阳光灿烂的中午，看了一上午的报纸，茶水也顺带喝了不少，肚子早已经咕咕作响了，今天中午吃点什么了，貌似楼下的新开张的盒饭还不错，于是我来到楼下准备买上一盒。<br>菜色还不错，价格有6元，8元，10元，12元，20元的，像哥这样的精英管理人才，怎么着也的吃最高级的才配合身份，就在我准备购买时，一个响亮的声音响起。<br>“老板，给我一份10元的盒饭”。<br>顺势撇了一眼，一个小伙子，眉开眼笑的靠近盒饭铺，今天是1号，看样子是发工资了。就当他走近时，看到了我，刚才的欢愉的表情瞬时黯淡下去，他知道我认出了他，靠，满头白里带一点黑的头发，永远没睡醒的眼神，以及那凌乱的胡渣子，都出卖了他的身份。我继续狠狠的盯着他，他越发的羞愧了，我犀利的眼神正在和他做着底层通信，我默默的向他传达一个信息，<br>“你，也配吃10元的盒饭?”。<br>他哀怜的眼神似乎在祈求我不要拆穿他的身份，可惜，哥这么有正义感的人，怎么能在这个时候放弃原则!<br>“你不是隔壁公司的程序员么?”<br>就这一瞬间，他整个人似乎崩溃下去，刚才欢愉的表情彻底变为哭丧，周围的小摊贩以及路人甲乙丙丁，都纷纷投来了鄙视的眼光，他瘟鸡一样的双手抓着头发，痛苦的蹲了下去。<br>就在这时，人群中终于有人忍不住了，大声呵骂到，</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/05/22/test/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -569,18 +573,15 @@
 
       
         
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/05/19/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -764,6 +765,26 @@
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i> 访问人数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i> 总访问量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
 
         
       </div>

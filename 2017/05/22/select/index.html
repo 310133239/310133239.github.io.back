@@ -99,7 +99,7 @@
 <meta property="og:site_name" content="小梦刚的博客">
 <meta property="og:description" content="bootstrap 中的多选使用官方文档   首先先引入bootstrap.js(不要忘记jquery)和boostrap.css 引入bootstrap-select.js和css 好了现在开始   1.第一种静态生成1234567891011&amp;lt;select class=&amp;quot;selectpicker“&amp;gt;      &amp;lt;option value=&amp;quot;65&amp;quot;">
 <meta property="og:image" content="http://yoursite.com/images/select.png">
-<meta property="og:updated_time" content="2017-05-22T15:51:51.032Z">
+<meta property="og:updated_time" content="2017-05-22T16:07:55.561Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="select">
 <meta name="twitter:description" content="bootstrap 中的多选使用官方文档   首先先引入bootstrap.js(不要忘记jquery)和boostrap.css 引入bootstrap-select.js和css 好了现在开始   1.第一种静态生成1234567891011&amp;lt;select class=&amp;quot;selectpicker“&amp;gt;      &amp;lt;option value=&amp;quot;65&amp;quot;">
@@ -306,6 +306,11 @@
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i> 浏览
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+            </span>
+          
 
           
 
@@ -334,7 +339,7 @@
 <h4 id="2-动态生成"><a href="#2-动态生成" class="headerlink" title="2.动态生成"></a>2.动态生成</h4><blockquote>
 <p>在实际开发过程中我们肯定会遇到字符串拼接生成在bootstrap-select有一个很好的方法那就是 $(‘.selectpicker’).selectpicker(‘refresh’);</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">var str1=&quot;&quot;;</div><div class="line">for(var i=0;i&lt;data.length;i++)&#123;</div><div class="line">	str1+=&apos;&lt;option value=&quot;&apos;+data.val+&apos;&quot;&gt;&apos;+data.name+&apos;&lt;/option&gt;&apos;</div><div class="line"></div><div class="line">&#125;</div><div class="line">var str=&apos;&lt;select class=&quot;selectpicker  pull-left&quot; multiple data-noneSelectedText=&quot;点击添加&quot; data-title=&quot;点击添加&quot;&gt;&apos;+str1+&apos;&lt;/select&gt;&apos;;</div><div class="line"> $(&quot;.selectList&quot;).html(str);</div><div class="line">$(&apos;.selectpicker&apos;).selectpicker(&apos;refresh&apos;);</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">var str1=&quot;&quot;;</div><div class="line">for(var i=0;i&lt;data.length;i++)&#123;</div><div class="line">	str1+=&apos;&lt;option value=&quot;&apos;+data.val+&apos;&quot;&gt;&apos;+data.name+&apos;&lt;/option&gt;&apos;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">&lt;!-- more --&gt;</div><div class="line"></div><div class="line">var str=&apos;&lt;select class=&quot;selectpicker  pull-left&quot; multiple data-noneSelectedText=&quot;点击添加&quot; data-title=&quot;点击添加&quot;&gt;&apos;+str1+&apos;&lt;/select&gt;&apos;;</div><div class="line"> $(&quot;.selectList&quot;).html(str);</div><div class="line">$(&apos;.selectpicker&apos;).selectpicker(&apos;refresh&apos;);</div></pre></td></tr></table></figure>
 <p>然后就直接好了，什么时候需要动态添加就直接refresh就好了</p>
 <h4 id="3-关于事件的触发"><a href="#3-关于事件的触发" class="headerlink" title="3.关于事件的触发"></a>3.关于事件的触发</h4><blockquote>
 <p>刚开始的时候我也是看了会文档发现没有选择的事件触发啊，后来我才发现原来用的是原生的事件，bootstrap虽然改变了样式结构但是事件最后是没有更改的。直接用原生就好了。</p>
@@ -620,6 +625,26 @@
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i> 访问人数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i> 总访问量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
 
         
       </div>

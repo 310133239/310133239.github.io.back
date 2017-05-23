@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-05-23T15:36:46.978Z</updated>
+  <updated>2017-05-23T16:13:19.602Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/05/23/js/"/>
     <id>http://yoursite.com/2017/05/23/js/</id>
     <published>2017-05-23T13:04:58.000Z</published>
-    <updated>2017-05-23T15:36:46.978Z</updated>
+    <updated>2017-05-23T16:13:19.602Z</updated>
     
     <content type="html"><![CDATA[<h3 id="高阶函数"><a href="#高阶函数" class="headerlink" title="高阶函数"></a>高阶函数</h3><h4 id="举一个栗子"><a href="#举一个栗子" class="headerlink" title="举一个栗子"></a>举一个栗子</h4><blockquote>
 <p>js高阶函数Javascript的函数其实就是指向某个变量。既然变量可以指向函数，函数的参数可以使变量，那么一个函数可以接受另一个函数卫星参数。就比说ajax的成功回调函数就是当做形参穿进去了，当相应成功的时候执行函数。</p>
@@ -42,7 +42,7 @@
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var arr=[1,2,3,4,5];</div><div class="line">arr.reduce(function(x,y)&#123;</div><div class="line">	return x+y</div><div class="line">&#125;);//15</div></pre></td></tr></table></figure>
 <p>好了今天学会了map reduce 的方法了。</p>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="http://music.163.com/outchain/player?type=2&id=32192436&auto=1&height=32"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="//music.163.com/outchain/player?type=2&id=32192436&auto=1&height=32"></iframe>
 
 
 

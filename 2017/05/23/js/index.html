@@ -92,18 +92,16 @@
 
 
 
-<meta name="description" content="bootstrap 中的多选使用官方文档   首先先引入bootstrap.js(不要忘记jquery)和boostrap.css 引入bootstrap-select.js和css 好了现在开始   1.第一种静态生成1234567891011&amp;lt;select class=&amp;quot;selectpicker&amp;quot;&amp;gt;      &amp;lt;option value=&amp;quot;65&amp;">
+<meta name="description" content="高阶函数举一个栗子 js高阶函数Javascript的函数其实就是指向某个变量。既然变量可以指向函数，函数的参数可以使变量，那么一个函数可以接受另一个函数卫星参数。就比说ajax的成功回调函数就是当做形参穿进去了，当相应成功的时候执行函数。  再比如一个最简单的高阶函数1234567function add(x,y,f)&amp;#123;	return f(x)+f(y);&amp;#125;var x=-3;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="select">
-<meta property="og:url" content="http://yoursite.com/2017/05/22/select/index.html">
+<meta property="og:title" content="map reduce 的方法学习">
+<meta property="og:url" content="http://yoursite.com/2017/05/23/js/index.html">
 <meta property="og:site_name" content="小梦刚的博客">
-<meta property="og:description" content="bootstrap 中的多选使用官方文档   首先先引入bootstrap.js(不要忘记jquery)和boostrap.css 引入bootstrap-select.js和css 好了现在开始   1.第一种静态生成1234567891011&amp;lt;select class=&amp;quot;selectpicker&amp;quot;&amp;gt;      &amp;lt;option value=&amp;quot;65&amp;">
-<meta property="og:image" content="http://yoursite.com/images/select.png">
-<meta property="og:updated_time" content="2017-05-22T16:19:27.194Z">
+<meta property="og:description" content="高阶函数举一个栗子 js高阶函数Javascript的函数其实就是指向某个变量。既然变量可以指向函数，函数的参数可以使变量，那么一个函数可以接受另一个函数卫星参数。就比说ajax的成功回调函数就是当做形参穿进去了，当相应成功的时候执行函数。  再比如一个最简单的高阶函数1234567function add(x,y,f)&amp;#123;	return f(x)+f(y);&amp;#125;var x=-3;">
+<meta property="og:updated_time" content="2017-05-23T15:36:46.978Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="select">
-<meta name="twitter:description" content="bootstrap 中的多选使用官方文档   首先先引入bootstrap.js(不要忘记jquery)和boostrap.css 引入bootstrap-select.js和css 好了现在开始   1.第一种静态生成1234567891011&amp;lt;select class=&amp;quot;selectpicker&amp;quot;&amp;gt;      &amp;lt;option value=&amp;quot;65&amp;">
-<meta name="twitter:image" content="http://yoursite.com/images/select.png">
+<meta name="twitter:title" content="map reduce 的方法学习">
+<meta name="twitter:description" content="高阶函数举一个栗子 js高阶函数Javascript的函数其实就是指向某个变量。既然变量可以指向函数，函数的参数可以使变量，那么一个函数可以接受另一个函数卫星参数。就比说ajax的成功回调函数就是当做形参穿进去了，当相应成功的时候执行函数。  再比如一个最简单的高阶函数1234567function add(x,y,f)&amp;#123;	return f(x)+f(y);&amp;#125;var x=-3;">
 
 
 
@@ -131,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/05/22/select/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/05/23/js/"/>
 
 
 
 
 
-  <title>select | 小梦刚的博客</title>
+  <title>map reduce 的方法学习 | 小梦刚的博客</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -257,7 +255,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/22/select/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/23/js/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="小梦刚">
@@ -274,7 +272,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">select</h1>
+          <h1 class="post-title" itemprop="name headline">map reduce 的方法学习</h1>
         
 
         <div class="post-meta">
@@ -286,8 +284,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-22T23:44:56+08:00">
-                2017-05-22
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-23T21:04:58+08:00">
+                2017-05-23
               </time>
             
 
@@ -326,30 +324,44 @@
       
 
       
-        <h3 id="bootstrap-中的多选使用"><a href="#bootstrap-中的多选使用" class="headerlink" title="bootstrap 中的多选使用"></a>bootstrap 中的多选使用</h3><p><a href="https://silviomoreto.github.io/bootstrap-select/" target="_blank" rel="external">官方文档</a></p>
-<blockquote>
-<ol>
-<li>首先先引入bootstrap.js(不要忘记jquery)和boostrap.css</li>
-<li>引入bootstrap-select.js和css</li>
-<li>好了现在开始</li>
-</ol>
+        <h3 id="高阶函数"><a href="#高阶函数" class="headerlink" title="高阶函数"></a>高阶函数</h3><h4 id="举一个栗子"><a href="#举一个栗子" class="headerlink" title="举一个栗子"></a>举一个栗子</h4><blockquote>
+<p>js高阶函数Javascript的函数其实就是指向某个变量。既然变量可以指向函数，函数的参数可以使变量，那么一个函数可以接受另一个函数卫星参数。就比说ajax的成功回调函数就是当做形参穿进去了，当相应成功的时候执行函数。</p>
 </blockquote>
-<h4 id="1-第一种静态生成"><a href="#1-第一种静态生成" class="headerlink" title="1.第一种静态生成"></a>1.第一种静态生成</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&lt;select class=&quot;selectpicker&quot;&gt;</div><div class="line">      &lt;option value=&quot;65&quot;&gt;淹死の鱼&lt;/option&gt;</div><div class="line">      &lt;option value=&quot;66&quot;&gt;宋真真&lt;/option&gt;</div><div class="line">      &lt;option value=&quot;89&quot;&gt;燕子&lt;/option&gt;</div><div class="line">      &lt;option value=&quot;88&quot;&gt;何兴华&lt;/option&gt;</div><div class="line">      &lt;option value=&quot;90&quot;&gt;巧芝-冯&lt;/option&gt;</div><div class="line">      &lt;option value=&quot;91&quot;&gt;曼舞飞扬&lt;/option&gt;</div><div class="line">      &lt;option value=&quot;94&quot;&gt;鲍海地&lt;/option&gt;</div><div class="line">      &lt;option value=&quot;63&quot;&gt;蔡&lt;/option&gt;</div><div class="line">      &lt;option value=&quot;381&quot;&gt;Tank&lt;/option&gt;</div><div class="line">&lt;/select&gt;</div></pre></td></tr></table></figure>
-<p>直接就在页面中生成了。</p>
-<h4 id="2-动态生成"><a href="#2-动态生成" class="headerlink" title="2.动态生成"></a>2.动态生成</h4><blockquote>
-<p>在实际开发过程中我们肯定会遇到字符串拼接生成在bootstrap-select有一个很好的方法那就是 $(‘.selectpicker’).selectpicker(‘refresh’);</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">var str1=&quot;&quot;;</div><div class="line">for(var i=0;i&lt;data.length;i++)&#123;</div><div class="line">	str1+=&apos;&lt;option value=&quot;&apos;+data.val+&apos;&quot;&gt;&apos;+data.name+&apos;&lt;/option&gt;&apos;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">var str=&apos;&lt;select class=&quot;selectpicker  pull-left&quot; multiple data-noneSelectedText=&quot;点击添加&quot; data-title=&quot;点击添加&quot;&gt;&apos;+str1+&apos;&lt;/select&gt;&apos;;</div><div class="line"> $(&quot;.selectList&quot;).html(str);</div><div class="line">$(&apos;.selectpicker&apos;).selectpicker(&apos;refresh&apos;);</div></pre></td></tr></table></figure>
-<p>然后就直接好了，什么时候需要动态添加就直接refresh就好了</p>
+<p>再比如一个最简单的高阶函数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">function add(x,y,f)&#123;</div><div class="line">	return f(x)+f(y);</div><div class="line">&#125;</div><div class="line">var x=-3;</div><div class="line">var y=4;</div><div class="line">var f=Math.abs;</div><div class="line">alert(add(x,y,f))//7</div></pre></td></tr></table></figure></p>
 <a id="more"></a>
-<h4 id="3-关于事件的触发"><a href="#3-关于事件的触发" class="headerlink" title="3.关于事件的触发"></a>3.关于事件的触发</h4><blockquote>
-<p>刚开始的时候我也是看了会文档发现没有选择的事件触发啊，后来我才发现原来用的是原生的事件，bootstrap虽然改变了样式结构但是事件最后是没有更改的。直接用原生就好了。</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">$(&quot;.selectList&quot;).on(&quot;change&quot;,&quot;.selectpicker&quot;,function()&#123;</div><div class="line">       selectName=[];</div><div class="line">       for (var i=0;i&lt;$(this).find(&quot;option:selected&quot;).length;i++)&#123;</div><div class="line">           var obj=&#123;&#125;;</div><div class="line">           obj.id=$(this).find(&quot;option:selected&quot;).eq(i).val();</div><div class="line">           obj.name=$(this).find(&quot;option:selected&quot;).eq(i).text();</div><div class="line">           selectName.push(obj);</div><div class="line">       &#125;</div><div class="line">   &#125;);</div></pre></td></tr></table></figure>
+<h4 id="map方法"><a href="#map方法" class="headerlink" title="map方法"></a>map方法</h4><p>定义</p>
 <blockquote>
-<p>那么现在一个简单的boostrap-select简单的需求就完成了。</p>
+<p>map 方法可以返回一个新数组,数组中的元素为原始数组元素调用处理后的值。也就是说map接受一个函数返回的数组中的元素被传入的函数处理后的新函数。</p>
 </blockquote>
-<p><img src="/images/select.png" alt=""><br>如果需要更多的方法那就去看文档去吧。</p>
+<p>####### tip </p>
+<ol>
+<li>不会改变原来的数组</li>
+<li>不处理空的数组</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var arr=[2,3,4,5,6];</div><div class="line">function xx(x)&#123;</div><div class="line">	return x*x;</div><div class="line">&#125;</div><div class="line">console.log(arr.map(xx))//[4, 9, 16, 25, 36]</div></pre></td></tr></table></figure>
+<h3 id="reduce"><a href="#reduce" class="headerlink" title="reduce"></a>reduce</h3><h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><blockquote>
+<p>reduce()方法接受一个函数作为一个累加器，数组中的每个值进行计算<br>f(f(f(x1, x2), x3), x4)</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var arr=[1,2,3,4,5];</div><div class="line">arr.reduce(function(x,y)&#123;</div><div class="line">	return x+y</div><div class="line">&#125;);//15</div></pre></td></tr></table></figure>
+<p>好了今天学会了map reduce 的方法了。</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="http://music.163.com/outchain/player?type=2&id=32192436&auto=1&height=32"></iframe>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       
     </div>
@@ -386,8 +398,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/05/22/test/" rel="next" title="程序员买盖饭">
-                <i class="fa fa-chevron-left"></i> 程序员买盖饭
+              <a href="/2017/05/22/select/" rel="next" title="select">
+                <i class="fa fa-chevron-left"></i> select
               </a>
             
           </div>
@@ -395,10 +407,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/05/23/js/" rel="prev" title="map reduce 的方法学习">
-                map reduce 的方法学习 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -592,7 +600,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#bootstrap-中的多选使用"><span class="nav-number">1.</span> <span class="nav-text">bootstrap 中的多选使用</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-第一种静态生成"><span class="nav-number">1.1.</span> <span class="nav-text">1.第一种静态生成</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-动态生成"><span class="nav-number">1.2.</span> <span class="nav-text">2.动态生成</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-关于事件的触发"><span class="nav-number">1.3.</span> <span class="nav-text">3.关于事件的触发</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#高阶函数"><span class="nav-number">1.</span> <span class="nav-text">高阶函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#举一个栗子"><span class="nav-number">1.1.</span> <span class="nav-text">举一个栗子</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#map方法"><span class="nav-number">1.2.</span> <span class="nav-text">map方法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#reduce"><span class="nav-number">2.</span> <span class="nav-text">reduce</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#定义"><span class="nav-number">2.1.</span> <span class="nav-text">定义</span></a></li></ol></li></ol></div>
             
 
           </div>

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-05-22T16:19:27.194Z</updated>
+  <updated>2017-05-23T15:36:46.978Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,65 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>map reduce 的方法学习</title>
+    <link href="http://yoursite.com/2017/05/23/js/"/>
+    <id>http://yoursite.com/2017/05/23/js/</id>
+    <published>2017-05-23T13:04:58.000Z</published>
+    <updated>2017-05-23T15:36:46.978Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="高阶函数"><a href="#高阶函数" class="headerlink" title="高阶函数"></a>高阶函数</h3><h4 id="举一个栗子"><a href="#举一个栗子" class="headerlink" title="举一个栗子"></a>举一个栗子</h4><blockquote>
+<p>js高阶函数Javascript的函数其实就是指向某个变量。既然变量可以指向函数，函数的参数可以使变量，那么一个函数可以接受另一个函数卫星参数。就比说ajax的成功回调函数就是当做形参穿进去了，当相应成功的时候执行函数。</p>
+</blockquote>
+<p>再比如一个最简单的高阶函数<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">function add(x,y,f)&#123;</div><div class="line">	return f(x)+f(y);</div><div class="line">&#125;</div><div class="line">var x=-3;</div><div class="line">var y=4;</div><div class="line">var f=Math.abs;</div><div class="line">alert(add(x,y,f))//7</div></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<h4 id="map方法"><a href="#map方法" class="headerlink" title="map方法"></a>map方法</h4><p>定义</p>
+<blockquote>
+<p>map 方法可以返回一个新数组,数组中的元素为原始数组元素调用处理后的值。也就是说map接受一个函数返回的数组中的元素被传入的函数处理后的新函数。</p>
+</blockquote>
+<p>####### tip </p>
+<ol>
+<li>不会改变原来的数组</li>
+<li>不处理空的数组</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var arr=[2,3,4,5,6];</div><div class="line">function xx(x)&#123;</div><div class="line">	return x*x;</div><div class="line">&#125;</div><div class="line">console.log(arr.map(xx))//[4, 9, 16, 25, 36]</div></pre></td></tr></table></figure>
+<h3 id="reduce"><a href="#reduce" class="headerlink" title="reduce"></a>reduce</h3><h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><blockquote>
+<p>reduce()方法接受一个函数作为一个累加器，数组中的每个值进行计算<br>f(f(f(x1, x2), x3), x4)</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var arr=[1,2,3,4,5];</div><div class="line">arr.reduce(function(x,y)&#123;</div><div class="line">	return x+y</div><div class="line">&#125;);//15</div></pre></td></tr></table></figure>
+<p>好了今天学会了map reduce 的方法了。</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="http://music.163.com/outchain/player?type=2&id=32192436&auto=1&height=32"></iframe>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;高阶函数&quot;&gt;&lt;a href=&quot;#高阶函数&quot; class=&quot;headerlink&quot; title=&quot;高阶函数&quot;&gt;&lt;/a&gt;高阶函数&lt;/h3&gt;&lt;h4 id=&quot;举一个栗子&quot;&gt;&lt;a href=&quot;#举一个栗子&quot; class=&quot;headerlink&quot; title=&quot;举一个栗子&quot;&gt;&lt;/a&gt;举一个栗子&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;js高阶函数Javascript的函数其实就是指向某个变量。既然变量可以指向函数，函数的参数可以使变量，那么一个函数可以接受另一个函数卫星参数。就比说ajax的成功回调函数就是当做形参穿进去了，当相应成功的时候执行函数。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;再比如一个最简单的高阶函数&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;function add(x,y,f)&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;	return f(x)+f(y);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;var x=-3;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;var y=4;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;var f=Math.abs;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;alert(add(x,y,f))//7&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>select</title>

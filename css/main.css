@@ -6,6 +6,7 @@ html {
 }
 body {
   margin: 0;
+  background: #404040;
 }
 article,
 aside,
@@ -189,7 +190,7 @@ body {
   font-size: 14px;
   line-height: 2;
   color: #555;
-  background: #f5f7f9;
+  background: #404040;
 }
 @media (max-width: 767px) {
   body {
@@ -1696,7 +1697,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #83daeb;
+  background: #ee25f0;
 }
 .links-of-blogroll {
   font-size: 13px;
